@@ -13,7 +13,14 @@
   "images.variation.names.alternate",
   "images.variation.names.lang",
   "item.storeSpecial",
+<<<<<<< HEAD
   "properties*",
+=======
+  "properties.group.backendName",
+  "properties.property.names.name",
+  "properties.property.names.lang",
+  "properties.property.isShownOnItemPage",
+>>>>>>> refs/remotes/plentymarkets/stable
   "salesPrices.price",
   "salesPrices.type",
   "unit.content",
