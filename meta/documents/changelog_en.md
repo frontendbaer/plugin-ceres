@@ -1,5 +1,48 @@
 # Release Notes for Ceres
 
+## v2.8.1 (2018-05-16) <a href="https://github.com/plentymarkets/plugin-ceres/compare/2.8.0...2.8.1" target="_blank" rel="noopener"><b>Overview of all changes</b></a>
+
+### Fixed
+
+- Due to an error, the settings of the Shop Builder image carousel widget were not working properly. This has been fixed.
+- Due to an error, the link to the cancellation rights was not clickable in the checkout. This has been fixed.
+
+## v2.8.0 (2018-05-08) <a href="https://github.com/plentymarkets/plugin-ceres/compare/2.7.0...2.8.0" target="_blank" rel="noopener"><b>Overview of all changes</b></a>
+
+### ToDo
+
+- Plugins and themes that utilise language-dependent texts from the Ceres .properties files may need to be modified. Please refer to the following thread for further information: https://forum.plentymarkets.com/t/ankuendigung-anpassung-der-properties-dateien-in-ceres/340077
+- If item sorting according to price has been activated, it needs to be selected and saved again in the "Pagination and sorting » Enable item sorting by" option of the Ceres configuration.
+
+### Added
+
+- The elements of the homepage have been outsourced as editable elements for the Shop Builder.
+- A container for overwriting search filters has been added.
+- The facet type **price** has been added.
+- The option to include trailing slashes is now considered when generating URLs.
+
+### Changed
+
+- The configuration of the homepage has been outsourced to the Shop Builder.
+- External URLs are now accessed via the rel="noopener" attribute.
+- Ceres now reacts to the event "afterPaymentMethodChange" and reloads the shopping cart data after changing the payment method.
+- The meta title is now used as the title of a category. If no meta title has been saved, the name of the category is used instead.
+- The language-dependent texts of Ceres have been reorganised and renamed in order to conform to the multilingualism functionality.
+- The item sorting according to price is now based on the average price of a variation instead of its minimum/maximum price.
+
+### Fixed
+
+- Due to an error the fast switching between categories led to problems in the Firefox browser. This has been fixed.
+- Due to an error, changing the payment method immediately triggered the event "afterPaymentMethodChanged". The event is now only triggered after a successful server response.
+- Due to an error, changing the shipping profile immediately triggered the event "afterShippingProfileChanged". The event is now only triggered after a successful server response.
+- Due to an error, properties that had not been created as order properties were displayed as order properties in the item view. This has been fixed.
+- Due to an error, data from the Ceres GlobalContext could not be loaded if accessed via a route of another plugin. This has been fixed.
+- When using Ceres and IO as a client that is not the main client, category details of the main client were loaded under certain circumstances. This has been fixed.
+- Due to an error, the side navigation and the breadcrumbs were not working properly on touch devices. This has been fixed.
+- Due to an error, the linked shipping cost category was not displayed in the item overview. This has been fixed.
+- Various CSS errors for the image carousel have been fixed.
+- The browser history is now working properly when navigating between categories.
+
 ## v2.7.0 (2018-04-13) <a href="https://github.com/plentymarkets/plugin-ceres/compare/2.6.0...2.7.0" target="_blank"><b>Overview of all changes</b></a>
 
 ### Added
