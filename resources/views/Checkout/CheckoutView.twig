@@ -3,7 +3,7 @@
 
 {% block PartialHead %}
     <meta name="robots" content="NOINDEX, NOFOLLOW">
-    <title>{{ trans("Ceres::Template.checkout") }} | {{ config("Ceres.header.company_name") }}</title>
+    <title>{{ trans("Ceres::Template.checkout") }} | {{ trans("Ceres::Template.headerCompanyName") }}</title>
 {% endblock %}
 
 {% block PageBody %}
@@ -11,6 +11,7 @@
     {{ component( "Ceres::Customer.Components.AddressSelect.AddressSelect" ) }}
     {{ component( "Ceres::Checkout.Components.AcceptGtcCheck" ) }}
     {{ component( "Ceres::Checkout.Components.PaymentProviderSelect" ) }}
+    {{ component( "Ceres::Checkout.Components.ShippingPrivacyHintCheck" ) }}
     {{ component( "Ceres::Checkout.Components.ShippingProfileSelect" ) }}
     {{ component( "Ceres::Checkout.Components.PlaceOrder" ) }}
     {{ component( "Ceres::Checkout.Components.ContactWishInput" ) }}
@@ -112,6 +113,8 @@
 
                                 <contact-wish-input class="p-b-1" template="#vue-contact-wish-input"></contact-wish-input>
 
+                                <shipping-privacy-hint-check></shipping-privacy-hint-check>
+
                                 <div class="form-check">
                                     <accept-gtc-check template="#vue-accept-gtc-check"></accept-gtc-check>
                                 </div>
@@ -145,7 +148,7 @@
                             <aside class="sidebar">
                                 <div class="cmp cmp-checkout-sidebar">
                                     {{ LayoutContainer.show("Ceres::Checkout.BeforeBasketTotals") }}
-                                    <basket-totals template="#vue-basket-totals" :config="{{ config("Ceres.basket.data")|split(', ') | json_encode() }}"></basket-totals>
+                                    <basket-totals template="#vue-basket-totals" :show-net-prices="{{ showNetPrices | json_encode }}"></basket-totals>
                                     {{ LayoutContainer.show("Ceres::Checkout.AfterBasketTotals") }}
                                 </div>
                             </aside>

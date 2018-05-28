@@ -4,7 +4,8 @@
         "key"       : "header.company_name",
         "label"     : "Name of your store",
         "type"      : "text",
-        "default"   : "Ceres Webshop"
+        "default"   : "Ceres Webshop",
+        "deprecated": true
     },
     {
         "tab"       : "Global",
@@ -33,7 +34,6 @@
         "type"      : "checkbox",
         "default"   : "false"
     },
-
     {
         "tab"                         : "Global",
         "key"                         : "contact.shop_mail",
@@ -46,14 +46,16 @@
         "key"                         : "contact.opening_times",
         "label"                       : "Opening hours (DE)",
         "type"                        : "text",
-        "default"                     : "Montag - Freitag, 00:00 - 24:00"
+        "default"                     : "Montag - Freitag, 00:00 - 24:00",
+        "deprecated"                  : true
     },
     {
         "tab"                         : "Global",
         "key"                         : "contact.en.opening_times",
         "label"                       : "Opening hours (EN)",
         "type"                        : "text",
-        "default"                     : "Monday - Friday, 00:00 - 24:00"
+        "default"                     : "Monday - Friday, 00:00 - 24:00",
+        "deprecated"                  : true
     },
     {
         "tab"                         : "Global",
@@ -337,21 +339,24 @@
         "key"       : "footer.store_feature_1",
         "label"     : "Text of first store feature",
         "type"      : "text",
-        "default"   : "Delivery period approx. 1 to 3 business days "
+        "default"   : "Delivery period approx. 1 to 3 business days",
+        "deprecated": true
     },
     {
         "tab"       : "Footer",
         "key"       : "footer.store_feature_2",
         "label"     : "Text of second store feature",
         "type"      : "text",
-        "default"   : "Free shipping & return "
+        "default"   : "Free shipping & return",
+        "deprecated": true
     },
     {
         "tab"       : "Footer",
         "key"       : "footer.store_feature_3",
         "label"     : "Text of third store feature",
         "type"      : "text",
-        "default"   : "100-day return policy"
+        "default"   : "100-day return policy",
+        "deprecated": true
     },
     {
         "tab"           : "Footer",
@@ -371,7 +376,8 @@
         "key"       : "footer.col_1_title",
         "label"     : "Title of first column",
         "type"      : "text",
-        "default"   : "Shop"
+        "default"   : "Shop",
+        "deprecated": true
     },
     {
         "tab"       : "Footer",
@@ -385,7 +391,8 @@
         "key"       : "footer.col_2_title",
         "label"     : "Title of second column",
         "type"      : "text",
-        "default"   : "My account"
+        "default"   : "My account",
+        "deprecated": true
     },
     {
         "tab"       : "Footer",
@@ -399,7 +406,8 @@
         "key"       : "footer.col_3_title",
         "label"     : "Title of third column",
         "type"      : "text",
-        "default"   : "Service"
+        "default"   : "Service",
+        "deprecated": true
     },
     {
         "tab"       : "Footer",
@@ -609,14 +617,16 @@
         "key"               : "item.lists.1.de.list_name",
         "label"             : "Name of the first item list (DE)",
         "type"              : "text",
-        "default"           : "DE name"
+        "default"           : "DE name",
+        "deprecated"        : true
     },
     {
         "tab"               : "Item lists",
         "key"               : "item.lists.1.en.list_name",
         "label"             : "Name of the first item list (EN)",
         "type"              : "text",
-        "default"           : "EN name"
+        "default"           : "EN name",
+        "deprecated"        : true
     },
     {
         "tab"               : "Item lists",
@@ -643,14 +653,16 @@
         "key"               : "item.lists.2.de.list_name",
         "label"             : "Name of the second item list (DE)",
         "type"              : "text",
-        "default"           : "DE name"
+        "default"           : "DE name",
+        "deprecated"        : true
     },
     {
         "tab"               : "Item lists",
         "key"               : "item.lists.2.en.list_name",
         "label"             : "Name of the second item list (EN)",
         "type"              : "text",
-        "default"           : "EN name"
+        "default"           : "EN name",
+        "deprecated"        : true
     },
     {
         "tab"               : "Item lists",
@@ -677,14 +689,16 @@
         "key"               : "item.lists.3.de.list_name",
         "label"             : "Name of the third item list (DE)",
         "type"              : "text",
-        "default"           : "DE name"
+        "default"           : "DE name",
+        "deprecated"        : true
     },
     {
         "tab"               : "Item lists",
         "key"               : "item.lists.3.en.list_name",
         "label"             : "Name of the third item list (EN)",
         "type"              : "text",
-        "default"           : "EN name"
+        "default"           : "EN name",
+        "deprecated"        : true
     },
     {
         "tab"               : "Item lists",
@@ -723,7 +737,8 @@
             "basket.order_total_gross"      : "Total (Gross)",
             "basket.order_total_net"        : "Total (Net)"
         },
-        "default"                           : "basket.value_of_items_gross, basket.value_of_items_net, basket.shipping_costs_gross, basket.shipping_costs_net, basket.vat, basket.order_total_gross, basket.order_total_net"
+        "default"                           : "basket.value_of_items_gross, basket.value_of_items_net, basket.shipping_costs_gross, basket.shipping_costs_net, basket.vat, basket.order_total_gross, basket.order_total_net",
+        "deprecated"                        : true
     },
     {
         "tab"                               : "Shopping cart",
@@ -740,7 +755,8 @@
             "basket.order_total_gross"      : "Total (Gross)",
             "basket.order_total_net"        : "Total (Net)"
         },
-        "default"                           : "basket.value_of_items_gross, basket.shipping_costs_gross, basket.order_total_gross"
+        "default"                           : "basket.value_of_items_gross, basket.shipping_costs_gross, basket.order_total_gross",
+        "deprecated"                        : true
     },
     {
         "tab"       : "Shopping cart",
@@ -1454,14 +1470,16 @@
         "key"       : "meta.de.description_home",
         "label"     : "Meta description for homepage (DE)",
         "type"      : "textarea",
-        "default"   : ""
+        "default"   : "",
+        "deprecated": true
     },
     {
         "tab"       : "SEO",
         "key"       : "meta.en.description_home",
         "label"     : "Meta description for homepage (EN)",
         "type"      : "textarea",
-        "default"   : ""
+        "default"   : "",
+        "deprecated": true
     },
     {
         "tab"                         : "SEO",
@@ -1483,14 +1501,16 @@
         "key"       : "meta.de.description_contact",
         "label"     : "Meta description for contact page (DE)",
         "type"      : "textarea",
-        "default"   : ""
+        "default"   : "",
+        "deprecated": true
     },
     {
         "tab"       : "SEO",
         "key"       : "meta.en.description_contact",
         "label"     : "Meta description for contact page (EN)",
         "type"      : "textarea",
-        "default"   : ""
+        "default"   : "",
+        "deprecated": true
     },
     {
         "tab"                         : "SEO",
@@ -1512,14 +1532,16 @@
         "key"       : "meta.de.description_cancel_rights",
         "label"     : "Meta description for cancellation rights (DE)",
         "type"      : "textarea",
-        "default"   : ""
+        "default"   : "",
+        "deprecated": true
     },
     {
         "tab"       : "SEO",
         "key"       : "meta.en.description_cancel_rights",
         "label"     : "Meta description for cancellation rights (EN)",
         "type"      : "textarea",
-        "default"   : ""
+        "default"   : "",
+        "deprecated": true
     },
     {
         "tab"                         : "SEO",
@@ -1541,14 +1563,16 @@
         "key"       : "meta.de.description_cancel_form",
         "label"     : "Meta description for cancellation form (DE)",
         "type"      : "textarea",
-        "default"   : ""
+        "default"   : "",
+        "deprecated": true
     },
     {
         "tab"       : "SEO",
         "key"       : "meta.en.description_cancel_form",
         "label"     : "Meta description for cancellation form (EN)",
         "type"      : "textarea",
-        "default"   : ""
+        "default"   : "",
+        "deprecated": true
     },
     {
         "tab"                         : "SEO",
@@ -1570,14 +1594,16 @@
         "key"       : "meta.de.description_legal_disclosure",
         "label"     : "Meta description for legal disclosure (DE)",
         "type"      : "textarea",
-        "default"   : ""
+        "default"   : "",
+        "deprecated": true
     },
     {
         "tab"       : "SEO",
         "key"       : "meta.en.description_legal_disclosure",
         "label"     : "Meta description for legal disclosure (EN)",
         "type"      : "textarea",
-        "default"   : ""
+        "default"   : "",
+        "deprecated": true
     },
     {
         "tab"                         : "SEO",
@@ -1599,14 +1625,16 @@
         "key"       : "meta.de.description_privacy_policy",
         "label"     : "Meta description for privacy policy (DE)",
         "type"      : "textarea",
-        "default"   : ""
+        "default"   : "",
+        "deprecated": true
     },
     {
         "tab"       : "SEO",
         "key"       : "meta.en.description_privacy_policy",
         "label"     : "Meta description for privacy policy (EN)",
         "type"      : "textarea",
-        "default"   : ""
+        "default"   : "",
+        "deprecated": true
     },
     {
         "tab"                         : "SEO",
@@ -1628,14 +1656,16 @@
         "key"       : "meta.de.description_terms_and_conditions",
         "label"     : "Meta description for terms and conditions (DE)",
         "type"      : "textarea",
-        "default"   : ""
+        "default"   : "",
+        "deprecated": true
     },
     {
         "tab"       : "SEO",
         "key"       : "meta.en.description_terms_and_conditions",
         "label"     : "Meta description for terms and conditions (EN)",
         "type"      : "textarea",
-        "default"   : ""
+        "default"   : "",
+        "deprecated": true
     },
     {
         "tab"               : "Design",

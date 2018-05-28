@@ -115,6 +115,7 @@ Vue.component("add-to-basket", {
                 this.$store.dispatch("addBasketItem", basketObject).then(
                     response =>
                     {
+                        document.dispatchEvent(new CustomEvent("afterBasketItemAdded", {detail: basketObject}));
                         this.waiting = false;
                         this.openAddToBasketOverlay(basketObject.quantity);
                     },
